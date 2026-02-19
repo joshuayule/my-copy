@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Design Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-main: #ffffff;
+      --bg-subtle: #f8f8f8;
+      --text-main: #000000;
+      --text-secondary: #666666;
+      --border-color: #e0e0e0;
+      --accent: #000000;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: var(--bg-subtle); }
+    ::-webkit-scrollbar-thumb { background: #ccc; }
+    ::-webkit-scrollbar-thumb:hover { background: #000; }
+
+    .studio-button {
+      background-color: #000;
+      color: #fff;
+      border-radius: 0px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      transition: all 0.1s ease;
+      text-transform: uppercase;
+    }
+    
+    .studio-button:hover:not(:disabled) {
+      background-color: #333;
+    }
+
+    .studio-button:disabled {
+      background-color: #f0f0f0;
+      color: #ccc;
+      cursor: not-allowed;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      background: #e0e0e0;
+      height: 2px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 12px;
+      height: 12px;
+      background: #000;
+      cursor: pointer;
+      border-radius: 0;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
